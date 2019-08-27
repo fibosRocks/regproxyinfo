@@ -1,0 +1,98 @@
+{
+  "version": "eosio::abi/1.0",
+  "types": [],
+  "structs": [{
+      "name": "proxy",
+      "base": "",
+      "fields": [{
+          "name": "owner",
+          "type": "name"
+        },{
+          "name": "name",
+          "type": "string"
+        },{
+          "name": "website",
+          "type": "string"
+        },{
+          "name": "slogan",
+          "type": "string"
+        },{
+          "name": "philosophy",
+          "type": "string"
+        },{
+          "name": "background",
+          "type": "string"
+        },{
+          "name": "logo",
+          "type": "string"
+        },{
+          "name": "contact",
+          "type": "string"
+        }
+      ]
+    },{
+      "name": "set",
+      "base": "",
+      "fields": [{
+          "name": "proxy",
+          "type": "name"
+        },{
+          "name": "name",
+          "type": "string"
+        },{
+          "name": "slogan",
+          "type": "string"
+        },{
+          "name": "philosophy",
+          "type": "string"
+        },{
+          "name": "background",
+          "type": "string"
+        },{
+          "name": "website",
+          "type": "string"
+        },{
+          "name": "logo",
+          "type": "string"
+        },{
+          "name": "contact",
+          "type": "string"
+        }
+      ]
+    },{
+      "name": "remove",
+      "base": "",
+      "fields": [{
+          "name": "proxy",
+          "type": "name"
+        }
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "set",
+      "type": "set",
+      "ricardian_contract": ""
+    },{
+      "name": "remove",
+      "type": "remove",
+      "ricardian_contract": ""
+    }
+  ],
+  "tables": [{
+      "name": "proxies",
+      "index_type": "i64",
+      "key_names": [
+        "owner"
+      ],
+      "key_types": [
+        "name"
+      ],
+      "type": "proxy"
+    }
+  ],
+  "ricardian_clauses": [],
+  "error_messages": [],
+  "abi_extensions": [],
+  "variants": []
+}
